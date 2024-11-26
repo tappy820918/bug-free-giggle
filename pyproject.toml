@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "repo-function-parser"
+version = "0.1.0"
+description = ""
+authors = ["Hsieh Li-Cheng <tappy820918@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+pytest = "^8.3.2"
+python-dotenv = "1.0.1"
+toml = "*"
+tqdm = "*"
+pandas = "*"
+numpy = "*"
+pydantic = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+agent-run = "llm_agent.src:start"
